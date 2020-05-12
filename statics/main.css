@@ -1,0 +1,348 @@
+html,
+body {
+  height: 95%;
+}
+
+/* ##### index page ##### */
+.index-bg::after {
+  background: url(images/trees-clouds-sky.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.index-bg #content {
+  margin-left: 5%;
+  margin-right: 10%;
+  margin-top: 150px;
+  color: #272727;
+  font-size: 40px;
+}
+
+/* ##### trees page ##### */
+.trees-bg {
+  min-height: 100%;
+  background-color: #4e728264;
+  background-size: cover;
+}
+
+.trees-bg #content {
+  margin-left: 5%;
+  margin-right: 15%;
+  margin-top: 70px;
+  color: #272727;
+  font-size: 25px;
+}
+
+/* ##### exaples page ##### */
+.examples-bg {
+  min-height: 100%;
+  background-color: #4e728264;
+  background-size: cover;
+}
+
+.examples-bg #content {
+  margin-left: 5%;
+  margin-right: 15%;
+  margin-top: 70px;
+  color: #272727;
+  font-size: 25px;
+}
+
+#sequoia div {
+  text-align: center;
+  font-size: 15px;
+  margin-top: -15px;
+}
+
+#sequoia img {
+  background: url(../statics/images/sequoia.jpg) no-repeat center center;
+  height: 200px;
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+
+/* ##### table page ##### */
+.table-bg {
+  min-height: 100%;
+  background-color: #4e728264;
+  background-size: cover;
+}
+
+.table-bg #content {
+  display: block;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 15%;
+  margin-top: 50px;
+  color: #272727;
+  font-size: 25px;
+}
+
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td,
+#table th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+}
+
+/* ##### gallery page ##### */
+.gallery-bg {
+  min-height: 100%;
+  background-color: #4e728264;
+  background-size: cover;
+}
+
+.column {
+  float: left;
+  width: 22%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.7;
+  cursor: pointer;
+  height: 200px;
+  width: 400px;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* ##### advertisement ##### */
+
+#ad {
+  position: fixed;
+  text-align: center;
+  top: 300px;
+}
+
+#ad img {
+  float: right;
+  height: 300px;
+}
+
+/* ##### nav ##### */
+#logo {
+  margin-top: 5px;
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+#logo div {
+  float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav {
+  height: 50px;
+}
+
+#nav ul .nav-left {
+  list-style: none;
+  float: left;
+}
+
+#nav ul .nav-left a {
+  color: aliceblue;
+  font-size: 35px;
+}
+
+#nav ul .nav-right {
+  list-style: none;
+  float: right;
+  margin-right: 5%;
+  margin-top: 14px;
+}
+
+#nav ul .nav-right a {
+  color: #272727;
+  font-size: 25px;
+  border: solid 2px #272727;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#nav ul .nav-right#active a {
+  color: aliceblue;
+  font-size: 25px;
+  border: solid 2px aliceblue;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#nav ul .nav-right a:hover {
+  color: aliceblue;
+  font-size: 25px;
+  border: solid 2px aliceblue;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* ##### footer ##### */
+#footer {
+  height: 50px;
+  margin-top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+#up {
+  float: right;
+  margin-right: 40px;
+  margin-top: -20px;
+  color: #272727;
+  font-size: 15px;
+  border: solid 2px #272727;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#up:hover {
+  color: aliceblue;
+  border: solid 2px aliceblue;
+}
+
+
+
+/* ##### window size ##### */
+@media (max-width: 1350px) {
+  #logo div {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  #nav ul .nav-right a {
+    font-size: 15px;
+  }
+
+  #nav ul .nav-right#active a {
+    font-size: 15px;
+  }
+
+  #nav ul .nav-right a:hover {
+    font-size: 15px;
+  }
+
+  #nav ul .nav-right#active a:hover {
+    font-size: 15px;
+  }
+
+  #content p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  #nav ul .nav-right a {
+    font-size: 12px;
+  }
+
+  #nav ul .nav-right#active a {
+    font-size: 12px;
+  }
+
+  #nav ul .nav-right a:hover {
+    font-size: 12px;
+  }
+
+  #nav ul .nav-right#active a:hover {
+    font-size: 12px;
+  }
+
+  #content p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #nav ul .nav-right a {
+    font-size: 8px;
+  }
+
+  #nav ul .nav-right#active a {
+    font-size: 8px;
+  }
+
+  #nav ul .nav-right a:hover {
+    font-size: 8px;
+  }
+
+  #nav ul .nav-right#active a:hover {
+    font-size: 8px;
+  }
+
+  #content p {
+    font-size: 12px;
+  }
+}
+
+
+/* ##### without scrollbar ##### */
+::-webkit-scrollbar {
+  display: none;
+}
